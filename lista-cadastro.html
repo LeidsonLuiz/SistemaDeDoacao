@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-lista-cadastro.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>Adoção</title>
+</head>
+
+<body>
+    <!-- :::HEADER::: -->
+
+    <div class="barra-de-navegacao">
+        <img class="header-logo" src="img/dogs-cats2.png" alt="logo">
+        <nav class="menu" id="menu">
+            <ul class="navegacao">
+                <li class="navegacao-item"><a href="index.html" class="navegacao-link">Home</a></li>
+                <li class="navegacao-item"><a href="adocao.html" class="navegacao-link">Adoção</a></li>
+                <li class="navegacao-item"><a href="lista-cadastro.html" class="navegacao-link">Lista</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- :::BODY::: -->
+
+    <div class="site-container">
+        <section class="main">
+            <div class="cadastro-animais">
+                <div class="caixa-titulo">
+                    <span class="titulo">Cadastro de novos animais</span>
+                </div>
+
+                <div class="quadrado-desenho">
+                    <img class="animals" src="img/animals.png" alt="animais">
+                </div>
+
+                <div class="formulario">
+                    <form action="" method="post" name="formulario" id="formulario">
+
+                        <div class="raca-sexo">
+                            <div class="cadastro-input-div">
+                                <label class="rotulo-input" for="raca">Raça</label>
+                                <input class="cadastro-input" type="text" id="raca" autocomplete="off" />
+                            </div>
+                            <div class="cadastro-input-div">
+                                <label class="rotulo-input" for="sexo">Sexo</label>
+                                <input class="cadastro-input" type="text" id="sexo" autocomplete="off" />
+                            </div>
+                        </div>
+
+                        <div class="idade-peso-chip-status">
+                            <div class="idade-peso">
+                                <div class="cadastro-input-div">
+                                    <label class="rotulo-input" for="idade">Idade</label>
+                                    <input class="cadastro-input" type="text" id="idade" autocomplete="off" />
+                                </div>
+                                <div class="cadastro-input-div">
+                                    <label class="rotulo-input" for="peso">Peso</label>
+                                    <input class="cadastro-input" type="peso" id="peso" autocomplete="off" />
+                                </div>
+                            </div>
+
+
+                            <div class="chip-status">
+                                <div class="cadastro-input-div">
+                                    <label class="rotulo-input" for="chip">Chip</label>
+                                    <input class="cadastro-input" type="chip" id="chip" autocomplete="off" />
+                                </div>
+                                <div class="cadastro-input-div">
+                                    <label class="rotulo-input" for="status">Status</label>
+                                    <select name="status" id="status">
+                                        <option value="Vivo">Vivo</option>
+                                        <option value="Morto">Morto</option>
+                                    </select>
+                                    <!-- <input class="cadastro-input" type="status" id="status" autocomplete="off" /> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="botao-cadastrar">
+                            <button type="button" class="botao" id="cadastrarAnimal">Cadastrar</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="busca-tabela">
+
+            <div class="busca-div">
+                <span class="titulo-busca">Digite a raça ou a identificação do animal desejado para buscar:</span>
+                <input class="input-busca" type="search" name="busca" id="busca" autocomplete="off">
+            </div>
+
+            <div class="div-tabela">
+                <table class="tabela">
+                    <thead>
+                        <th>Raça</th>
+                        <th>Sexo</th>
+                        <th>Idade</th>
+                        <th>Peso</th>
+                        <th>Chip</th>
+                        <th>Status</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody id="listaAnimais"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="busca-tabela2">
+
+            <div class="div-tabela2">
+                <table class="tabela2">
+                    <thead>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                        <th>CPF</th>
+                        <th>Endereco</th>
+                        <th>senha</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody id="listaPessoas"></tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+<script src="js/listaCadastro.js"></script>
+
+</html>

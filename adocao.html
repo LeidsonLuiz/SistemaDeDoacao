@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-adocao.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>Adoção</title>
+</head>
+
+<body>
+    <!-- :::HEADER::: -->
+
+    <div class="barra-de-navegacao">
+        <img class="header-logo" src="img/dogs-cats2.png" alt="logo">
+        <nav class="menu" id="menu">
+            <ul class="navegacao">
+                <li class="navegacao-item"><a href="index.html" class="navegacao-link">Home</a></li>
+                <li class="navegacao-item"><a href="adocao.html" class="navegacao-link">Adoção</a></li>
+                <li class="navegacao-item"><a href="lista-cadastro.html" class="navegacao-link">Lista</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- :::BODY::: -->
+
+    <div class="site-container">
+        <section class="main">
+            <div class="apresentacao">
+                <div class="titulo-div">
+                    <h1 class="titulo">OLÁ,<br>seja bem vindo ao<br>nosso sistema<br>de adoção<br>de animais</h1>
+                </div>
+
+                <div class="animais-img">
+                    <img class="cat" src="img/cat-dog3.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="busca-tabela">
+
+            <div class="busca-div">
+                <span class="titulo-busca">Digite a raça ou a identificação do animal desejado para buscar:</span>
+                <input class="input-busca" type="search" name="busca" id="busca" autocomplete="off">
+            </div>
+
+            <div class="div-tabela">
+                <table id="tabela">
+                    <thead>
+                        <th>Raça</th>
+                        <th>Sexo</th>
+                        <th>Idade</th>
+                        <th>Peso</th>
+                        <th>Chip</th>
+                        <th>Status</th>
+                    </thead>
+                    <tbody id="listaAnimais"></tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+</body>
+<script src="js/adocao.js"></script>
+</html>
