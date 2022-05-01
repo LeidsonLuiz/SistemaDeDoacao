@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ==========HOME=========== */
+
+/* =====HEADER===== */
+
+.barra-de-navegacao{
+    display: flex;
+    /* position: absolute; */
+    flex-wrap: wrap;
+    width: 100%;
+    height: 115px;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFBB0B;
+}
+
+.header-logo{
+    width: 151px;
+    height: 64px;
+    margin-left: 5%;
+    opacity: 80%;
+}
+
+.navegacao{
+    display: flex;
+    margin-right: 70px;
+}
+
+.navegacao li{
+    margin-left: 90px;
+}
+
+.navegacao li a{
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 0px;
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+}
+
+.navegacao-item::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.navegacao-item:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+/* =====MAIN===== */
+
+.main{
+    display: flex;
+}
+
+.card{
+    background-color: #FFBB0B;
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 355px;
+    height: 505px;
+
+    border-radius: 55px;
+}
+
+.caixa-titulo{
+    text-align: center;
+    padding: 10%;
+}
+
+.titulo{
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.formulario{
+    text-align: center;
+    text-decoration: none;
+    border: none;
+}
+
+.login-input{
+    width: 230px;
+    height: 47px;
+    margin: 5%;
+    padding-left: 20px;
+
+
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    border: none;
+}
+
+.login-input::-webkit-input-placeholder { /* Chrome, Safari, Opera */
+    color: rgba(0, 0, 0, 0.3);
+    font-style: italic;
+    font-weight: 700;
+    margin-left: 5px;
+  }
+
+  textarea:focus, input:focus, select:focus {
+    outline: 0;
+}
+
+.botao{
+    width: 230px;
+    height: 47px;
+    margin: 2%;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFBB0B;
+
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    border: none;
+}
+
+#span-ou{
+    font-weight: 700;
+    font-size: 25px;
+
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#botao1{
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.botao2-div{
+    margin-top: 20px;
+}
+
+#botao2{
+    padding: 12px 52px 12px 51px;
+    text-decoration: none;
+}
+
+.cat-dog{
+    width: 542px;
+    height: 580px;
+    margin-left: 50%;
+    margin-top: 10%;
+}
+
